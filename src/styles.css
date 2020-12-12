@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #dbf6e9;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 500px;
+  margin: -25vh auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.top__section {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(57, 68, 126, 0.52),
+    rgba(153, 35, 189, 0.73)
+  );
+  height: 40vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.header h1 {
+  letter-spacing: 3px;
+}
+
+.create__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.create__todo {
+  flex: 1;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 85%;
+}
+
+.create__todo input {
+  font-size: 1rem;
+  border-radius: inherit;
+  display: flex;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.todos {
+  margin-top: 1rem;
+}
+
+.todos .todo {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px rgb(221, 216, 216) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos .todo span {
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.todos .todo:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.todos .todo:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+}
+
+.remove {
+  padding: 10px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  .create__wrapper {
+    flex-direction: column;
+  }
+  .create__wrapper select {
+    margin-top: 5px;
+  }
+  .create__todo {
+    width: 95%;
+  }
+}
